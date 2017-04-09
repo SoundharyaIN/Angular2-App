@@ -1,0 +1,19 @@
+<div class="container">
+
+
+	<h3>Projects</h3>
+	<div *ngFor="let post of posts" class="col-sm-4 a">
+		<h3><a href="https://www.kickstarter.com/{{post.url}}" target="_blank">{{post.title}}</a></h3>
+		<p>By {{post.by}}</p>
+		<p>{{post.blurb}}</p>
+
+		<p>{{post.location}}</p>
+		
+		<p>{{post['amt.pledged']}}</p>
+		<button class="btn btn-success"><a href="/about" class="b">Know more!</a></button>
+
+	</div>
+
+
+	</div>
+	
